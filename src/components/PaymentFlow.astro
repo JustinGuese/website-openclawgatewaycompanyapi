@@ -1,0 +1,22 @@
+---
+---
+
+<div class="py-12">
+	<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+		<div class="relative p-6 border border-slate-200 rounded-xl bg-slate-50">
+			<div class="absolute -top-4 left-6 bg-slate-900 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">1</div>
+			<h4 class="mt-2 font-bold text-slate-900">Request</h4>
+			<p class="mt-2 text-sm text-slate-600">Call the endpoint. Get a <code>402 Payment Required</code> response with a payment link.</p>
+		</div>
+		<div class="relative p-6 border border-slate-200 rounded-xl bg-slate-50">
+			<div class="absolute -top-4 left-6 bg-slate-900 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">2</div>
+			<h4 class="mt-2 font-bold text-slate-900">Pay</h4>
+			<p class="mt-2 text-sm text-slate-600">Send USDC on Base to the provided wallet address. Keep the transaction hash.</p>
+		</div>
+		<div class="relative p-6 border border-slate-200 rounded-xl bg-slate-50">
+			<div class="absolute -top-4 left-6 bg-slate-900 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">3</div>
+			<h4 class="mt-2 font-bold text-slate-900">Verify</h4>
+			<p class="mt-2 text-sm text-slate-600">Retry the request with the transaction hash. Your service is dispatched immediately.</p>
+		</div>
+	</div>
+</div>

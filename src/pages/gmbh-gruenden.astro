@@ -1,0 +1,82 @@
+---
+import Landing from '../layouts/Landing.astro';
+import PaymentFlow from '../components/PaymentFlow.astro';
+---
+
+<Landing title="GmbH remote gründen — ohne Notartermin in Deutschland" description="Gründen Sie Ihre deutsche GmbH komplett remote aus dem Ausland. Notartermine per Videokonferenz, Bankkonto-Eröffnung und volle Unterstützung durch AgentBureau.">
+	<div class="bg-slate-50 border-b border-slate-200">
+		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+			<h1 class="text-4xl font-extrabold text-slate-900 sm:text-5xl lg:text-6xl">
+				GmbH remote gründen — <span class="text-slate-600">ohne Notartermin vor Ort.</span>
+			</h1>
+			<p class="mt-6 text-xl text-slate-600 max-w-3xl">
+				Die Gründung einer deutschen GmbH war bisher ein bürokratischer Albtraum. AgentBureau automatisiert den Prozess und ermöglicht die Gründung komplett remote, auch für Gründer im Ausland.
+			</p>
+			<div class="mt-10 flex gap-4">
+				<a href="/playground" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-slate-900 hover:bg-slate-800">
+					Jetzt starten
+				</a>
+				<a href="/docs/services/company-formation" class="inline-flex items-center px-6 py-3 border border-slate-300 text-base font-medium rounded-md text-slate-700 bg-white hover:bg-slate-50">
+					Dokumentation lesen
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+		<div class="prose prose-slate max-w-none">
+			<h2>Warum AgentBureau für Ihre GmbH-Gründung?</h2>
+			<p>
+				In Deutschland eine GmbH zu gründen, erfordert normalerweise die physische Anwesenheit bei einem Notar. Dank modernster Verfahren und digitaler Notartermine bietet AgentBureau einen End-to-End-Service, der diesen Prozess für die Web3-Ära digitalisiert.
+			</p>
+
+			<div class="my-16 grid grid-cols-1 md:grid-cols-2 gap-12">
+				<div>
+					<h3 class="text-xl font-bold">Vergleich der Anbieter</h3>
+					<table class="min-w-full mt-4 border border-slate-200">
+						<thead class="bg-slate-50">
+							<tr>
+								<th class="px-4 py-2 text-left">Feature</th>
+								<th class="px-4 py-2 text-left">Firma.de / Ionos</th>
+								<th class="px-4 py-2 text-left font-bold text-slate-900">AgentBureau</th>
+							</tr>
+						</thead>
+						<tbody class="divide-y divide-slate-200">
+							<tr>
+								<td class="px-4 py-2">Remote Notar</td>
+								<td class="px-4 py-2 text-red-500">Teilweise / Nein</td>
+								<td class="px-4 py-2 text-green-600 font-bold">Ja (Standard)</td>
+							</tr>
+							<tr>
+								<td class="px-4 py-2">Bezahlung mit USDC</td>
+								<td class="px-4 py-2 text-red-500">Nein</td>
+								<td class="px-4 py-2 text-green-600 font-bold">Ja</td>
+							</tr>
+							<tr>
+								<td class="px-4 py-2">Agent-Ready API</td>
+								<td class="px-4 py-2 text-red-500">Nein</td>
+								<td class="px-4 py-2 text-green-600 font-bold">Ja</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div>
+					<h3 class="text-xl font-bold">Ablauf der Gründung</h3>
+					<PaymentFlow />
+				</div>
+			</div>
+
+			<h2 id="faq">Häufig gestellte Fragen (FAQ)</h2>
+			<div class="mt-8 space-y-8">
+				<div>
+					<h4 class="font-bold">Muss ich für die Gründung nach Deutschland reisen?</h4>
+					<p>Nein. Durch das Online-Verfahren zur Beurkundung von GmbH-Gründungen können wir den gesamten Prozess digital abwickeln, sofern die Gesellschafter über ein gültiges Ausweisdokument mit eID-Funktion oder ein entsprechendes Äquivalent verfügen.</p>
+				</div>
+				<div>
+					<h4 class="font-bold">Was kostet der Service?</h4>
+					<p>Unsere Service-Gebühr beträgt 2,500 USDC. Hinzu kommen die gesetzlichen Notar- und Registergebühren (ca. 600 - 800 EUR) sowie das Stammkapital (mind. 12.500 EUR für die Gründung einer GmbH).</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</Landing>

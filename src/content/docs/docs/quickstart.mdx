@@ -1,0 +1,67 @@
+---
+title: Quickstart
+description: Send your first paid API call in under 5 minutes.
+---
+
+# Send your first paid API call in under 5 minutes.
+
+AgentBureau uses the **x402 payment protocol**, allowing for frictionless, account-less API usage paid for with USDC on the Base network.
+
+### The 4-Step Flow
+
+1. **Choose an endpoint**: Browse the [API Reference](/docs/for-developers/code-examples) to find the service you need.
+2. **Initial Call**: Call the endpoint with no payment headers. You will receive a `402 Payment Required` response.
+3. **Send USDC**: Send the required amount of USDC to the GMBH wallet address provided in the response.
+4. **Retry with Tx-Hash**: Retry the original request, including the transaction hash in the `PAYMENT-SIGNATURE` header.
+
+---
+
+### Example 1: Free Dry-Run (Fax)
+
+Use the dry-run endpoint to verify your integration without spending real USDC.
+
+```bash
+curl -X POST https://agentbureau-api.datafortress.cloud/v1/fax/dry-run \
+     -H "Content-Type: application/json" \
+     -d '{
+       "recipient": "+49123456789",
+       "content": "Hello from the AgentBureau Quickstart!"
+     }'
+```
+
+Since this is a dry-run, it should return a `200 OK` (or a simulated success) depending on the environment.
+
+---
+
+### Example 2: Real Priced Call (Invoice)
+
+1. **Trigger the 402 error**:
+```bash
+curl -i -X POST https://agentbureau-api.datafortress.cloud/v1/invoices \
+     -H "Content-Type: application/json" \
+     -d '{
+       "customer": {"name": "Test Agency", "email": "agent@example.com"},
+       "items": [{"description": "AI Consulting", "amount": 10.0, "currency": "USD"}]
+     }'
+```
+
+2. **Send USDC**:
+Look for the `PAYMENT-LINK` or `PAYMENT-REQUIRED` headers in the response. It will contain the wallet address and the exact amount of USDC required. Use your wallet to send the USDC on the **Base** network.
+
+3. **Complete the request**:
+Once the transaction is confirmed, retry the request with the transaction hash:
+
+```bash
+curl -X POST https://agentbureau-api.datafortress.cloud/v1/invoices \
+     -H "Content-Type: application/json" \
+     -H "PAYMENT-SIGNATURE: 0xYourTransactionHashHere..." \
+     -d '{
+       "customer": {"name": "Test Agency", "email": "agent@example.com"},
+       "items": [{"description": "AI Consulting", "amount": 10.0, "currency": "USD"}]
+     }'
+```
+
+### Next Steps
+
+For a deep dive into the transaction verification and signature format, see the [tx-hash-v1 scheme](/docs/for-agents/tx-hash-v1-scheme) documentation.
+

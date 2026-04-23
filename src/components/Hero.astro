@@ -1,0 +1,35 @@
+---
+interface Props {
+	title: string;
+	subtitle: string;
+}
+
+const { title, subtitle } = Astro.props;
+---
+
+<section class="relative bg-white overflow-hidden">
+	<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 sm:py-32">
+		<div class="text-center">
+			<h1 class="text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl md:text-6xl">
+				<span class="block">{title}</span>
+			</h1>
+			<p class="mt-6 max-w-2xl mx-auto text-xl text-slate-500">
+				{subtitle}
+			</p>
+			<div class="mt-10 flex justify-center gap-4">
+				<a href="/playground" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-slate-900 hover:bg-slate-800">
+					Try it live
+				</a>
+				<a href="/docs/quickstart" class="inline-flex items-center px-6 py-3 border border-slate-300 text-base font-medium rounded-md text-slate-700 bg-white hover:bg-slate-50">
+					Read the docs
+				</a>
+			</div>
+			<div class="mt-16 flex justify-center items-center space-x-8 grayscale opacity-50">
+				<span class="text-sm font-semibold uppercase tracking-wider text-slate-400">Powered by</span>
+				<span class="text-xl font-bold text-slate-900">BASE</span>
+				<span class="text-xl font-bold text-slate-900">USDC</span>
+				<span class="text-xl font-bold text-slate-900">x402</span>
+			</div>
+		</div>
+	</div>
+</section>

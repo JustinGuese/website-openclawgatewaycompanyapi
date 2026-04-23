@@ -1,0 +1,55 @@
+---
+import Landing from '../layouts/Landing.astro';
+import PaymentFlow from '../components/PaymentFlow.astro';
+---
+
+<Landing title="Rechnung als API verschicken — Lexoffice Alternative" description="Versenden Sie tax-compliant deutsche Rechnungen direkt per API. Integriert mit Lexoffice, bezahlt mit USDC auf Base. Ideal für AI Agents und Web3-Projekte.">
+	<div class="bg-slate-50 border-b border-slate-200">
+		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+			<h1 class="text-4xl font-extrabold text-slate-900 sm:text-5xl lg:text-6xl">
+				Rechnung als API verschicken — <span class="text-slate-600">einfach & rechtssicher.</span>
+			</h1>
+			<p class="mt-6 text-xl text-slate-600 max-w-3xl">
+				Automatisieren Sie Ihre Buchhaltung. Unsere API verbindet sich nahtlos mit Lexoffice, um GoBD-konforme Rechnungen zu erstellen und zu versenden. Bezahlen Sie nur, was Sie nutzen, direkt on-chain.
+			</p>
+			<div class="mt-10 flex gap-4">
+				<a href="/playground" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-slate-900 hover:bg-slate-800">
+					Jetzt testen
+				</a>
+				<a href="/docs/services/invoicing" class="inline-flex items-center px-6 py-3 border border-slate-300 text-base font-medium rounded-md text-slate-700 bg-white hover:bg-slate-50">
+					API Docs
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+		<div class="prose prose-slate max-w-none">
+			<h2>Die Stripe-Alternative für Deutschland</h2>
+			<p>
+				Während Stripe hervorragend für internationale Zahlungen geeignet ist, erfordert die deutsche Buchhaltung oft spezifische Integrationen in Systeme wie Lexoffice oder DATEV. AgentBureau bietet die Brücke: Eine moderne REST-API, die im Hintergrund die deutsche Bürokratie erledigt.
+			</p>
+
+			<div class="my-16">
+				<h3 class="text-xl font-bold text-center">In 3 Schritten zur versendeten Rechnung</h3>
+				<PaymentFlow />
+			</div>
+
+			<div class="grid grid-cols-1 md:grid-cols-3 gap-8 my-16">
+				<div class="p-6 bg-white border border-slate-200 rounded-lg">
+					<h4 class="font-bold">GoBD Konform</h4>
+					<p class="text-sm mt-2">Alle Rechnungen entsprechen den deutschen Grundsätzen zur ordnungsmäßigen Führung und Aufbewahrung von Büchern.</p>
+				</div>
+				<div class="p-6 bg-white border border-slate-200 rounded-lg">
+					<h4 class="font-bold">Keine Fixkosten</h4>
+					<p class="text-sm mt-2">Keine monatlichen Grundgebühren. Sie zahlen 0.50 USDC pro erfolgreich erstellter Rechnung.</p>
+				</div>
+				<div class="p-6 bg-white border border-slate-200 rounded-lg">
+					<h4 class="font-bold">AI Agent Ready</h4>
+					<p class="text-sm mt-2">Dank x402-Protokoll können Ihre Agenten Rechnungen autonom bezahlen und versenden.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</Landing>
+

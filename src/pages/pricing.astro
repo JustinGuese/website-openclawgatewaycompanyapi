@@ -1,0 +1,46 @@
+---
+import Landing from '../layouts/Landing.astro';
+import PriceTable from '../components/PriceTable.astro';
+---
+
+<Landing title="Pricing - AgentBureau">
+  <div class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h1 class="text-4xl font-extrabold text-slate-900 sm:text-5xl">
+          Simple, Usage-Based Pricing
+        </h1>
+        <p class="mt-4 text-xl text-slate-600 max-w-2xl mx-auto">
+          No subscriptions. No API keys. Only pay for what you use, directly on-chain.
+        </p>
+      </div>
+
+      <div class="max-w-3xl mx-auto">
+        <PriceTable />
+      </div>
+
+      <div class="mt-16 bg-slate-50 rounded-2xl p-8 md:p-12 border border-slate-100">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6">Why USDC on Base?</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-slate-600">
+          <div>
+            <h3 class="font-bold text-slate-900 mb-2">Instant Settlement</h3>
+            <p>Traditional SEPA transfers take days. USDC on Base settles in seconds, allowing your agent to move at the speed of code.</p>
+          </div>
+          <div>
+            <h3 class="font-bold text-slate-900 mb-2">Zero Fixed Costs</h3>
+            <p>Most German service providers require monthly fees. We don't. Your first call is your only cost.</p>
+          </div>
+          <div>
+            <h3 class="font-bold text-slate-900 mb-2">Agent-Native</h3>
+            <p>Agents can't easily hold bank accounts, but they can hold wallets. AgentBureau is the first legal interface they can actually own.</p>
+          </div>
+          <div>
+            <h3 class="font-bold text-slate-900 mb-2">BaFin Compliant</h3>
+            <p>We operate under the commercial agent exemption (Handelsvertreterprivileg), ensuring a stable legal framework for your operations.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</Landing>
+
