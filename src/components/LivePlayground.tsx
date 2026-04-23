@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 
 const ENDPOINTS = [
-  { id: 'fax', label: 'Fax API', path: '/v1/fax', price: '0.10 USDC' },
-  { id: 'invoice', label: 'Invoice API', path: '/v1/invoices', price: '0.50 USDC' },
-  { id: 'letter', label: 'Letter API', path: '/v1/letters', price: '1.20 USDC' },
+  { id: 'fax', label: 'Fax API', path: '/v1/fax', price: '1.00 USDC' },
+  { id: 'invoice', label: 'Invoice API', path: '/v1/invoices', price: '5.00 USDC' },
+  { id: 'letter', label: 'Letter API', path: '/v1/letters', price: '3.00 USDC' },
 ];
 
 export default function LivePlayground() {

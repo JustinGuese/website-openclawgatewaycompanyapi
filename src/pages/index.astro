@@ -5,10 +5,10 @@ import ServiceCard from '../components/ServiceCard.astro';
 import PaymentFlow from '../components/PaymentFlow.astro';
 ---
 
-<Landing title="Legal infrastructure for AI agents in Germany">
+<Landing title="Empower Your Agents in the Real World">
 	<Hero 
-		title="Legal infrastructure for AI agents in Germany." 
-		subtitle="Invoices, letters, fax, and GmbH formation — paid per call with USDC on Base. No accounts. No API keys. Humans in the loop where the law requires it."
+		title="Empower Your Agents in the Real World." 
+		subtitle="The x402-powered gateway for AI agents to send faxes, mail physical letters, issue invoices, and form companies in Germany."
 	/>
 
 	<section class="py-24 bg-slate-50">
@@ -24,34 +24,37 @@ import PaymentFlow from '../components/PaymentFlow.astro';
 	<section class="py-24">
 		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 			<div class="text-center mb-16">
-				<h2 class="text-3xl font-extrabold text-slate-900">Our Services</h2>
+				<h2 class="text-3xl font-extrabold text-slate-900">Services & Pricing</h2>
 				<p class="mt-4 text-lg text-slate-600">Bridging the gap between the digital and physical worlds in Germany.</p>
 			</div>
 			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 				<ServiceCard 
 					title="GmbH Formation" 
 					description="Remote formation of a German GmbH, including notary coordination and bank account." 
-					price="2,500 USDC" 
+					price="3,000 USDC" 
 					href="/gmbh-gruenden"
 				/>
 				<ServiceCard 
 					title="Invoice API" 
 					description="Generate and send tax-compliant German invoices via Lexoffice automatically." 
-					price="0.50 USDC" 
+					price="5.00 USDC" 
 					href="/invoice-api"
 				/>
 				<ServiceCard 
 					title="Fax API" 
-					description="Send legally binding faxes to German authorities and businesses via Telnyx." 
-					price="0.10 USDC" 
+					description="Send legally binding faxes to German authorities and businesses." 
+					price="1.00 USDC" 
 					href="/fax-api"
 				/>
 				<ServiceCard 
 					title="Letter API" 
 					description="Send physical letters within Germany via Pingen. Full tracking included." 
-					price="1.20 USDC" 
+					price="3.00 USDC" 
 					href="/letter-api"
 				/>
+			</div>
+			<div class="mt-12 text-center">
+				<p class="text-slate-500">Need a UG instead? Formation available for 1,500 USDC + Stammkapital.</p>
 			</div>
 		</div>
 	</section>
@@ -60,34 +63,42 @@ import PaymentFlow from '../components/PaymentFlow.astro';
 		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 			<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
 				<div>
-					<h2 class="text-3xl font-bold">Built for Agents</h2>
+					<h2 class="text-3xl font-bold">Developer Experience (MCP)</h2>
 					<p class="mt-6 text-slate-300">
-						AgentBureau is designed from the ground up for autonomous AI agents. We use the x402 protocol for payments, meaning your agent can manage its own budget and legal footprint without human intervention.
+						AgentBureau supports the Model Context Protocol (MCP). Integrate our tools directly into your agent's environment using the SSE transport.
 					</p>
 					<div class="mt-8">
-						<code class="block bg-slate-800 p-4 rounded-lg text-sm text-green-400 overflow-x-auto">
-							curl -X POST https://agentbureau-api.datafortress.cloud/v1/fax/dry-run \<br/>
-							&nbsp;&nbsp;-H "Idempotency-Key: $(uuidgen)"
-						</code>
+						<div class="bg-slate-800 rounded-lg p-1">
+							<div class="flex items-center space-x-2 px-4 py-2 border-b border-slate-700">
+								<span class="text-xs font-mono text-slate-400">mcp_servers.yaml</span>
+							</div>
+							<pre class="p-4 text-sm text-green-400 overflow-x-auto"><code>{`mcpServers:
+  agentbureau:
+    command: npx
+    args:
+      - "-y"
+      - "@modelcontextprotocol/server-sse"
+      - "https://agentbureau-api.datafortress.cloud/mcp"`}</code></pre>
+						</div>
 					</div>
 				</div>
 				<div class="bg-slate-800 p-8 rounded-xl border border-slate-700">
-					<h3 class="text-xl font-bold">Why Base?</h3>
+					<h3 class="text-xl font-bold">Built for Agents</h3>
 					<p class="mt-4 text-slate-300">
-						Base provides the speed and low transaction costs required for micro-payments. USDC on Base is our native currency, ensuring stable pricing and instant settlement.
+						AgentBureau is designed from the ground up for autonomous AI agents. We use the x402 protocol for payments, meaning your agent can manage its own budget and legal footprint without human intervention.
 					</p>
 					<ul class="mt-6 space-y-4">
 						<li class="flex items-center">
 							<svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
-							<span>Sub-cent gas fees</span>
+							<span>No sign-ups, no API keys</span>
 						</li>
 						<li class="flex items-center">
 							<svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
-							<span>Instant confirmations</span>
+							<span>Permissionless USDC on Base</span>
 						</li>
 						<li class="flex items-center">
 							<svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
-							<span>Deep USDC liquidity</span>
+							<span>German Legal Compliance</span>
 						</li>
 					</ul>
 				</div>

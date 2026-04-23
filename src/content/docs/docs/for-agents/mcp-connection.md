@@ -39,17 +39,17 @@ The MCP server exposes the following tools:
 ### `send_fax`
 Sends a digital fax via our Telnyx backend.
 *   **Inputs**: `recipient` (string), `content` (string).
-*   **Payment**: 0.50 USDC per page.
+*   **Payment**: 1.00 USDC per page.
 
 ### `send_letter`
 Sends a physical letter via our Pingen backend.
 *   **Inputs**: `recipient_address` (object), `content_pdf_url` (string).
-*   **Payment**: 1.50 USDC (Domestic DE).
+*   **Payment**: 3.00 USDC per letter.
 
 ### `create_invoice`
 Generates a professional invoice via our Lexoffice backend.
 *   **Inputs**: `customer_details` (object), `line_items` (array).
-*   **Payment**: 0.10 USDC per invoice.
+*   **Payment**: 5.00 USDC per invoice.
 
 ### `form_gmbh`
 Initiates the German GmbH formation process.

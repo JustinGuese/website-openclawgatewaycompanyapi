@@ -45,7 +45,7 @@ The full OpenAPI 3.1 specification. We use the `x-payment` extension to decorate
 "/v1/fax": {
   "post": {
     "x-payment": {
-      "amount": "0.50",
+      "amount": "1.00",
       "currency": "USDC",
       "scheme": "tx-hash-v1"
     },

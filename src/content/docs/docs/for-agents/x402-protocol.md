@@ -17,7 +17,7 @@ The following headers are used to coordinate the payment between the agent and t
 
 | Header | Description |
 | :--- | :--- |
-| `PAYMENT-REQUIRED` | The amount and currency required (e.g., `0.50 USDC`). |
+| `PAYMENT-REQUIRED` | The amount and currency required (e.g., `5.00 USDC`). |
 | `PAYMENT-LINK` | An `ethereum:` URI or direct wallet address for payment. |
 | `X-PAYMENT-NONCE` | A unique nonce for the current payment request. |
 | `X-PAYMENT-SCHEME` | Set to `tx-hash-v1` for AgentBureau. |

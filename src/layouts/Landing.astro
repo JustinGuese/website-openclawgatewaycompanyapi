@@ -26,10 +26,26 @@ const { title, description = "Legal infrastructure for AI agents in Germany. Inv
 					<a href="/" class="text-2xl font-bold tracking-tight text-slate-900">AgentBureau</a>
 				</div>
 				<div class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
+					<a href="/" class="hover:text-slate-900">Home</a>
 					<a href="/pricing" class="hover:text-slate-900">Pricing</a>
 					<a href="/playground" class="hover:text-slate-900">Playground</a>
 					<a href="/docs/quickstart" class="hover:text-slate-900">Docs</a>
-					<a href="/blog" class="hover:text-slate-900">Blog</a>
+					
+					<div class="relative group">
+						<button class="flex items-center hover:text-slate-900 focus:outline-none">
+							About
+							<svg class="ml-1 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+							</svg>
+						</button>
+						<div class="absolute left-0 mt-2 w-48 bg-white border border-slate-100 rounded-md shadow-lg py-1 z-50 hidden group-hover:block transition-all duration-200">
+							<a href="/" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50">About Us</a>
+							<a href="/impressum" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50">Imprint</a>
+							<a href="/agb" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50">AGB / Legal</a>
+							<a href="/datenschutz" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50">Datenschutz</a>
+							<a href="/contact" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50">Contact</a>
+						</div>
+					</div>
 				</div>
 				<div class="flex items-center space-x-4">
 					<a href="/docs/quickstart" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-slate-900 hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-500">
@@ -69,11 +85,12 @@ const { title, description = "Legal infrastructure for AI agents in Germany. Inv
 							<li><a href="/impressum" class="text-sm text-slate-600 hover:text-slate-900">Impressum</a></li>
 							<li><a href="/datenschutz" class="text-sm text-slate-600 hover:text-slate-900">Datenschutz</a></li>
 							<li><a href="/agb" class="text-sm text-slate-600 hover:text-slate-900">AGB</a></li>
+							<li><a href="/contact" class="text-sm text-slate-600 hover:text-slate-900">Contact</a></li>
 						</ul>
 					</div>
 				</div>
 				<div class="mt-12 border-t border-slate-200 pt-8 flex items-center justify-between">
-					<p class="text-sm text-slate-500">&copy; {new Date().getFullYear()} AgentBureau Gateway GmbH. All rights reserved.</p>
+					<p class="text-sm text-slate-500">&copy; {new Date().getFullYear()} AgentBureau by DataFortress.cloud GmbH. All rights reserved.</p>
 				</div>
 			</div>
 		</footer>

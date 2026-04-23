@@ -1,0 +1,63 @@
+---
+import Landing from '../layouts/Landing.astro';
+---
+
+<Landing title="Contact" description="Get in touch with the AgentBureau team.">
+  <div class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto text-center">
+        <h1 class="text-4xl font-extrabold text-slate-900 sm:text-5xl">
+          Contact Us
+        </h1>
+        <p class="mt-4 text-xl text-slate-600">
+          Have questions about our API, legal framework, or custom integrations? We're here to help.
+        </p>
+      </div>
+
+      <div class="mt-16 max-w-lg mx-auto bg-slate-50 rounded-2xl p-8 border border-slate-100 shadow-sm">
+        <div class="space-y-8">
+          <div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">Email Support</h3>
+            <p class="text-slate-600 mb-4">
+              For technical inquiries and partnership requests, please reach out to us via email.
+            </p>
+            <div id="contact-container" class="inline-flex items-center space-x-2 text-indigo-600 font-medium hover:text-indigo-500 transition-colors">
+              <!-- Email will be injected here to hide from crawlers -->
+              <span class="text-slate-400 italic text-sm">[Enable JavaScript to see email]</span>
+            </div>
+          </div>
+
+          <div class="pt-8 border-t border-slate-200">
+            <h3 class="text-lg font-bold text-slate-900 mb-2">Company Address</h3>
+            <p class="text-slate-600">
+              DataFortress.cloud GmbH<br />
+              Gewerbestraße 13<br />
+              82064 Straßlach-Dingharting<br />
+              Germany
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</Landing>
+
+<script is:inline>
+  // Obfuscation to hide email from simple crawlers
+  (function() {
+    const user = "info";
+    const domain = "datafortress.cloud";
+    const container = document.getElementById('contact-container');
+    
+    if (container) {
+      const email = user + "@" + domain;
+      const link = document.createElement('a');
+      link.href = "mailto:" + email;
+      link.textContent = email;
+      link.className = "text-lg font-semibold underline decoration-2 underline-offset-4";
+      
+      container.innerHTML = '';
+      container.appendChild(link);
+    }
+  })();
+</script>
