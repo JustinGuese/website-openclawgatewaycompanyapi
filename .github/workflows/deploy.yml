@@ -8,6 +8,9 @@ on:
   # Allow manual triggering from the Actions tab
   workflow_dispatch:
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 # Allow this job to clone the repo and create a page deployment
 permissions:
   contents: read
@@ -19,10 +22,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Install, build, and upload docs
-        uses: withastro/action@v3
+        uses: withastro/action@v6
         with:
           # path: . # The root location of your Astro project inside the repository. (optional)
           node-version: 22
@@ -37,4 +40,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5

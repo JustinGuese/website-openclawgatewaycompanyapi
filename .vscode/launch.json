@@ -6,6 +6,12 @@
       "name": "Development server",
       "request": "launch",
       "type": "node-terminal"
+    },
+    {
+      "command": "npm run build",
+      "name": "Build project",
+      "request": "launch",
+      "type": "node-terminal"
     }
   ]
 }
