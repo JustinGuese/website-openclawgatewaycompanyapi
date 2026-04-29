@@ -15,7 +15,8 @@
     "agb": "AGB / Rechtliches",
     "privacy": "Datenschutz",
     "contact": "Kontakt",
-    "getStarted": "Jetzt starten"
+    "getStarted": "Jetzt starten",
+    "forInvestors": "Für Investoren"
   },
   "footer": {
     "services": "Dienste",
@@ -29,6 +30,172 @@
     "datenschutz": "Datenschutz",
     "agb": "AGB",
     "rights": "Alle Rechte vorbehalten."
+  },
+  "forInvestors": {
+    "metaTitle": "Investor Relations",
+    "metaDescription": "Das Embodiment Protocol für die Agenten-Ökonomie. Infrastruktur für KI-Agenten in der DACH-Region.",
+    "hero": {
+      "title": "Das Embodiment Protocol für die Agenten-Ökonomie",
+      "subtitle": "Überbrückung der Lücke zwischen KI-Handlungsfähigkeit und institutioneller Ausführung in der DACH-Region.",
+      "ctaDataRoom": "Datenraum anfordern",
+      "ctaThesis": "Thesis lesen"
+    },
+    "stats": {
+      "tam": {
+        "value": "$182.97B",
+        "label": "Agent Economy TAM 2033",
+        "sub": "49.6% CAGR"
+      },
+      "margin": {
+        "value": "~30%",
+        "label": "Margenvorteil",
+        "sub": "vs. traditionelle PSPs"
+      },
+      "services": {
+        "value": "5",
+        "label": "Dienste live",
+        "sub": "Fax, Brief, Rechnung, GmbH, UG"
+      },
+      "locales": {
+        "value": "5 / 6",
+        "label": "Regionen / Sprachen",
+        "sub": "DE, EN, FR, ES, ZH"
+      }
+    },
+    "problem": {
+      "title": "Der Embodiment-Gap",
+      "subtitle": "KI-Agenten haben eine hohe kognitive Handlungsfähigkeit, aber keine institutionelle Handlungsfähigkeit. Wir liefern die fehlende Schicht.",
+      "identity": {
+        "title": "Identität",
+        "legacy": "Staatliche ID / KYC",
+        "agent": "Nicht-biologisch; Keine rechtliche ID",
+        "solution": "x402 Payment-native Auth"
+      },
+      "finance": {
+        "title": "Finanzen",
+        "legacy": "SEPA-Bankkonto",
+        "agent": "Kein menschlicher Zeichnungsberechtigter",
+        "solution": "Abrechnung über USDC auf Base"
+      },
+      "action": {
+        "title": "Handlung",
+        "legacy": "Physische Unterschrift / Fax",
+        "agent": "Keine physische Präsenz",
+        "solution": "Programmatische Fax/Brief API"
+      }
+    },
+    "whyNow": {
+      "title": "Warum jetzt?",
+      "subtitle": "Der x402 + MCP Wendepunkt ermöglicht staatenlosen Maschine-zu-Maschine Handel.",
+      "feature": "Feature",
+      "legacy": "Legacy API Modell",
+      "mcp": "MCP + x402 Modell",
+      "agentConstraint": "Agenten-Beschränkung",
+      "solution": "Lösung",
+      "driver": "Treiber",
+      "onboarding": { "label": "Onboarding", "legacy": "Manuelle Kontoeröffnung + KYC", "mcp": "Sofort, staatenlos" },
+      "auth": { "label": "Auth", "legacy": "Statische API-Keys", "mcp": "Kryptographische Signaturen" },
+      "payment": { "label": "Zahlung", "legacy": "Abo / Kreditkarte", "mcp": "Pro Request USDC" },
+      "discovery": { "label": "Discovery", "legacy": "Manuelle Dokumentation", "mcp": "Programmatisch (MCP)" }
+    },
+    "revenue": {
+      "title": "Produkt / Umsatz-Mix",
+      "service": "Dienstleistung",
+      "price": "Preis (USDC)",
+      "cost": "Kostenbasis",
+      "margin": "Marge",
+      "drivers": {
+        "fax": "Hochvolumige Automatisierung",
+        "letter": "Logistische Abstraktion",
+        "invoice": "Buchhaltungs-API Wrap",
+        "ug": "Regulatorische Arbitrage",
+        "gmbh": "Vertrauensaufschlag"
+      }
+    },
+    "moat": {
+      "title": "Regulatorischer Burggraben",
+      "zag": {
+        "title": "ZAG §2(1) Nr.10 a/b",
+        "desc": "Nutzung der Bereichsausnahme für begrenzte Netze, um Volumen ohne vollständigen Banken-Overhead zu bewegen."
+      },
+      "storer": {
+        "title": "Störerhaftung 2026",
+        "desc": "Strategische Ausrichtung auf modernisierte Produkthaftungsgesetze für autonome Software."
+      },
+      "hitl": {
+        "title": "HITL Concierge",
+        "desc": "Human-in-the-loop Sorgfaltspflicht-Schicht für risikoreiche rechtliche Ausführungen."
+      }
+    },
+    "kpis": {
+      "title": "Prognostiziertes Wachstum & Ziele",
+      "subtitle": "Leistungsziele für Jahr 1 basierend auf der aktuellen Pipeline",
+      "apiCalls": "Ziel monatliche Aufrufe",
+      "payingAgents": "Ziel zahlende Agenten",
+      "gmv": "Prognostiziertes GMV",
+      "arpa": "Ziel ARPA",
+      "mcpInstalls": "Prognostizierte Installs",
+      "ttfc": "Ziel Setup-Zeit",
+      "uptime": "SLA-Zusage",
+      "values": {
+        "apiCalls": "15,000+",
+        "payingAgents": "500+",
+        "gmv": "$100,000+",
+        "arpa": "$200",
+        "mcpInstalls": "2,500+",
+        "ttfc": "< 5 Min.",
+        "uptime": "99.9%"
+      }
+    },
+    "roadmap": {
+      "title": "Roadmap",
+      "phase1": {
+        "title": "Pan-EU Expansion",
+        "desc": "Erweiterung des HITL-Netzwerks auf AT, CH und NL für europaweite Ausführung über eine einzige API."
+      },
+      "phase2": {
+        "title": "BaaS für Agenten",
+        "desc": "Programmatische Kontrolle über Firmenkonten via Haftungsschirme."
+      },
+      "phase3": {
+        "title": "On-Chain Reputation",
+        "desc": "Credit Scoring basierend auf der Ausführungshistorie, um treuhandlose Aktionen zu ermöglichen."
+      }
+    },
+    "benchmarks": {
+      "title": "Vergleichbare Benchmarks",
+      "bittensor": {
+        "title": "Bittensor",
+        "desc": "Konsens über maschinelle Intelligenz. AgentBureau ist Konsens über physische Arbeit."
+      },
+      "akash": {
+        "title": "Akash Network",
+        "desc": "Der Wechsel zu agentischem Compute beweist den Bedarf an ephemerer Ressourcenbeschaffung."
+      }
+    },
+    "valuation": {
+      "title": "Bewertung & Runde",
+      "ask": "Aktuelle Runde: Seed / $1M–2M Ziel",
+      "amount": "Betrag",
+      "cap": "Valuation Cap",
+      "v1": { "amount": "$100k–500k", "cap": "$9M" },
+      "v2": { "amount": "$500k–1M", "cap": "$11M" },
+      "v3": { "amount": "$1M–2M", "cap": "$15M" }
+    },
+    "risks": {
+      "title": "Risiken & Gegenmaßnahmen",
+      "risk": "Risiko",
+      "mitigation": "Gegenmaßnahme",
+      "reg": { "label": "Regulatorisch", "mitigation": "Abstimmung mit dem BaFin Innovation Hub" },
+      "counterparty": { "label": "Gegenpartei", "mitigation": "Multi-Vendor Abstraktionsschicht" },
+      "rails": { "label": "Krypto-Rails", "mitigation": "Fiat-Fallback Roadmap" },
+      "abuse": { "label": "Agenten-Missbrauch", "mitigation": "HITL-Gates & Verhaltensanalyse" }
+    },
+    "cta": {
+      "title": "Bereit, die Embodiment-Schicht zu unterstützen?",
+      "main": "Datenraum anfordern",
+      "secondary": "Intro-Call buchen"
+    }
   },
   "hero": {
     "title": "Befähigen Sie Ihre Agenten in der realen Welt.",

@@ -15,7 +15,8 @@
     "agb": "CGV / Juridique",
     "privacy": "Confidentialité",
     "contact": "Contact",
-    "getStarted": "Démarrer"
+    "getStarted": "Démarrer",
+    "forInvestors": "Pour les investisseurs"
   },
   "footer": {
     "services": "Services",
@@ -29,6 +30,172 @@
     "datenschutz": "Confidentialité",
     "agb": "CGV",
     "rights": "Tous droits réservés."
+  },
+  "forInvestors": {
+    "metaTitle": "Relations investisseurs",
+    "metaDescription": "Le protocole d'incarnation pour l'économie agentique. Infrastructure pour les agents d'IA dans la région DACH.",
+    "hero": {
+      "title": "Le protocole d'incarnation pour l'économie agentique",
+      "subtitle": "Combler le fossé entre l'agence cognitive de l'IA et l'exécution institutionnelle dans la région DACH.",
+      "ctaDataRoom": "Demander l'accès à la Data Room",
+      "ctaThesis": "Lire la thèse"
+    },
+    "stats": {
+      "tam": {
+        "value": "$182.97B",
+        "label": "TAM de l'économie des agents 2033",
+        "sub": "49.6% CAGR"
+      },
+      "margin": {
+        "value": "~30%",
+        "label": "Avantage de marge",
+        "sub": "vs PSP traditionnels"
+      },
+      "services": {
+        "value": "5",
+        "label": "Services en ligne",
+        "sub": "Fax, Lettre, Facture, GmbH, UG"
+      },
+      "locales": {
+        "value": "5 / 6",
+        "label": "Lieux / Langues",
+        "sub": "DE, EN, FR, ES, ZH"
+      }
+    },
+    "problem": {
+      "title": "Le fossé d'incarnation",
+      "subtitle": "Les agents d'IA ont une agence cognitive élevée mais une agence institutionnelle nulle. Nous fournissons la couche manquante.",
+      "identity": {
+        "title": "Identité",
+        "legacy": "ID gouvernementale / KYC",
+        "agent": "Non biologique ; Pas d'ID légale",
+        "solution": "Auth native au paiement x402"
+      },
+      "finance": {
+        "title": "Finance",
+        "legacy": "Compte bancaire SEPA",
+        "agent": "Pas de signataire humain",
+        "solution": "Règlement en USDC sur Base"
+      },
+      "action": {
+        "title": "Action",
+        "legacy": "Signature physique / Fax",
+        "agent": "Pas de présence physique",
+        "solution": "API de fax/lettre programmatique"
+      }
+    },
+    "whyNow": {
+      "title": "Pourquoi maintenant ?",
+      "subtitle": "Le point d'inflexion x402 + MCP permet un commerce de machine à machine sans État.",
+      "feature": "Caractéristique",
+      "legacy": "Modèle API classique",
+      "mcp": "Modèle MCP + x402",
+      "agentConstraint": "Contrainte de l'Agent",
+      "solution": "Solution",
+      "driver": "Moteur",
+      "onboarding": { "label": "Onboarding", "legacy": "Compte manuel + KYC", "mcp": "Instantané, sans État" },
+      "auth": { "label": "Auth", "legacy": "Clés API statiques", "mcp": "Signatures cryptographiques" },
+      "payment": { "label": "Paiement", "legacy": "Abonnement / Carte", "mcp": "USDC par requête" },
+      "discovery": { "label": "Découverte", "legacy": "Documentation manuelle", "mcp": "Programmatique (MCP)" }
+    },
+    "revenue": {
+      "title": "Mix produit / revenus",
+      "service": "Service",
+      "price": "Prix (USDC)",
+      "cost": "Base de coût",
+      "margin": "Marge",
+      "drivers": {
+        "fax": "Automatisation à haut volume",
+        "letter": "Abstraction logistique",
+        "invoice": "Wrapper API comptabilité",
+        "ug": "Arbitrage réglementaire",
+        "gmbh": "Prime de confiance"
+      }
+    },
+    "moat": {
+      "title": "Fossé réglementaire",
+      "zag": {
+        "title": "ZAG §2(1) No.10 a/b",
+        "desc": "Utilisation des exemptions de réseaux limités pour déplacer du volume sans les frais bancaires complets."
+      },
+      "storer": {
+        "title": "Störerhaftung 2026",
+        "desc": "Alignement stratégique avec les lois modernisées sur la responsabilité des produits pour les logiciels autonomes."
+      },
+      "hitl": {
+        "title": "Concierge HITL",
+        "desc": "Couche de devoir de diligence Human-in-the-loop pour les exécutions juridiques à haut risque."
+      }
+    },
+    "kpis": {
+      "title": "Croissance projetée et objectifs",
+      "subtitle": "Objectifs de performance pour l'année 1 basés sur le pipeline actuel",
+      "apiCalls": "Objectif d'appels mensuels",
+      "payingAgents": "Objectif d'agents payants",
+      "gmv": "GMV projeté",
+      "arpa": "Objectif ARPA",
+      "mcpInstalls": "Installations projetées",
+      "ttfc": "Objectif de temps de configuration",
+      "uptime": "Engagement SLA",
+      "values": {
+        "apiCalls": "15,000+",
+        "payingAgents": "500+",
+        "gmv": "$100,000+",
+        "arpa": "$200",
+        "mcpInstalls": "2,500+",
+        "ttfc": "< 5 min",
+        "uptime": "99.9%"
+      }
+    },
+    "roadmap": {
+      "title": "Feuille de route",
+      "phase1": {
+        "title": "Expansion Pan-EU",
+        "desc": "Extension du réseau HITL à AT, CH et NL pour une exécution européenne via une API unique."
+      },
+      "phase2": {
+        "title": "BaaS pour agents",
+        "desc": "Contrôle programmatique des comptes bancaires d'entités via des parapluies de responsabilité."
+      },
+      "phase3": {
+        "title": "Réputation on-chain",
+        "desc": "Scoring de crédit basé sur l'historique d'exécution pour permettre des actions sans séquestre."
+      }
+    },
+    "benchmarks": {
+      "title": "Benchmarks comparables",
+      "bittensor": {
+        "title": "Bittensor",
+        "desc": "Consensus sur l'intelligence artificielle. AgentBureau est le consensus sur le travail physique."
+      },
+      "akash": {
+        "title": "Akash Network",
+        "desc": "Le passage au calcul agentique prouve la demande pour l'acquisition de ressources éphémères."
+      }
+    },
+    "valuation": {
+      "title": "Valorisation et tour de table",
+      "ask": "Tour actuel : Seed / Objectif 1M$–2M$",
+      "amount": "Montant",
+      "cap": "Plafond de valorisation",
+      "v1": { "amount": "100k$–500k$", "cap": "9M$" },
+      "v2": { "amount": "500k$–1M$", "cap": "11M$" },
+      "v3": { "amount": "1M$–2M$", "cap": "15M$" }
+    },
+    "risks": {
+      "title": "Risques et atténuations",
+      "risk": "Risque",
+      "mitigation": "Atténuation",
+      "reg": { "label": "Réglementaire", "mitigation": "Alignement avec le BaFin Innovation Hub" },
+      "counterparty": { "label": "Contrepartie", "mitigation": "Couche d'abstraction multi-vendeurs" },
+      "rails": { "label": "Rails Crypto", "mitigation": "Feuille de route avec repli fiduciaire" },
+      "abuse": { "label": "Abus d'agent", "mitigation": "Portes HITL et analyse comportementale" }
+    },
+    "cta": {
+      "title": "Prêt à soutenir la couche d'incarnation ?",
+      "main": "Demander l'accès à la Data Room",
+      "secondary": "Réserver un appel d'introduction"
+    }
   },
   "hero": {
     "title": "Donnez du pouvoir à vos agents dans le monde réel.",

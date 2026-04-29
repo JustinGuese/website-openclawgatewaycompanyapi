@@ -15,7 +15,8 @@
     "agb": "条款 / 法律",
     "privacy": "隐私",
     "contact": "联系我们",
-    "getStarted": "开始使用"
+    "getStarted": "开始使用",
+    "forInvestors": "投资者关系"
   },
   "footer": {
     "services": "服务",
@@ -29,6 +30,172 @@
     "datenschutz": "隐私",
     "agb": "条款",
     "rights": "版权所有。"
+  },
+  "forInvestors": {
+    "metaTitle": "投资者关系",
+    "metaDescription": "智能体经济的具体化协议。DACH 地区 AI 智能体的基础设施。",
+    "hero": {
+      "title": "智能体经济的具体化协议",
+      "subtitle": "弥合 DACH 地区 AI 智能体认知能力与机构执行之间的差距。",
+      "ctaDataRoom": "请求进入资料库",
+      "ctaThesis": "阅读投资论文"
+    },
+    "stats": {
+      "tam": {
+        "value": "$182.97B",
+        "label": "2033 年智能体经济总潜在市场",
+        "sub": "49.6% 复合年增长率"
+      },
+      "margin": {
+        "value": "~30%",
+        "label": "利润优势",
+        "sub": "相比传统支付服务商"
+      },
+      "services": {
+        "value": "5",
+        "label": "已上线服务",
+        "sub": "传真、信函、发票、GmbH、UG"
+      },
+      "locales": {
+        "value": "5 / 6",
+        "label": "地区 / 语言",
+        "sub": "德、英、法、西、中"
+      }
+    },
+    "problem": {
+      "title": "具体化差距",
+      "subtitle": "AI 智能体拥有极高的认知代理权，但机构代理权为零。我们提供缺失的一层。",
+      "identity": {
+        "title": "身份",
+        "legacy": "政府身份证 / KYC",
+        "agent": "非生物；无法律身份",
+        "solution": "x402 支付原生身份验证"
+      },
+      "finance": {
+        "title": "金融",
+        "legacy": "SEPA 银行账户",
+        "agent": "无“人类”签署人",
+        "solution": "Base 链上 USDC 结算"
+      },
+      "action": {
+        "title": "行动",
+        "legacy": "实体签名 / 传真",
+        "agent": "无实体存在",
+        "solution": "程序化传真/信函 API"
+      }
+    },
+    "whyNow": {
+      "title": "为什么是现在？",
+      "subtitle": "x402 + MCP 的拐点实现了无状态的机器对机器商业。",
+      "feature": "特性",
+      "legacy": "传统 API 模式",
+      "mcp": "MCP + x402 模式",
+      "agentConstraint": "智能体约束",
+      "solution": "解决方案",
+      "driver": "驱动因素",
+      "onboarding": { "label": "入驻", "legacy": "手动开户 + KYC", "mcp": "即时、无状态" },
+      "auth": { "label": "认证", "legacy": "静态 API 密钥", "mcp": "加密签名" },
+      "payment": { "label": "支付", "legacy": "订阅 / 刷卡", "mcp": "按请求支付 USDC" },
+      "discovery": { "label": "发现", "legacy": "手动文档", "mcp": "程序化 (MCP)" }
+    },
+    "revenue": {
+      "title": "产品 / 收入组合",
+      "service": "服务",
+      "price": "价格 (USDC)",
+      "cost": "成本基数",
+      "margin": "利润率",
+      "drivers": {
+        "fax": "高业务量自动化",
+        "letter": "物流抽象",
+        "invoice": "财务 API 封装",
+        "ug": "监管套利",
+        "gmbh": "信任溢价"
+      }
+    },
+    "moat": {
+      "title": "监管护城河",
+      "zag": {
+        "title": "ZAG §2(1) No.10 a/b",
+        "desc": "利用有限网络豁免在不产生全部银行间接费用的情况下转移交易量。"
+      },
+      "storer": {
+        "title": "Störerhaftung 2026",
+        "desc": "战略性地与现代化的自主软件产品责任法案保持一致。"
+      },
+      "hitl": {
+        "title": "HITL 礼宾服务",
+        "desc": "针对高风险法律执行的人机协同尽职调查层。"
+      }
+    },
+    "kpis": {
+      "title": "预期增长与目标",
+      "subtitle": "基于当前业务线的第 1 年绩效目标",
+      "apiCalls": "目标每月调用次数",
+      "payingAgents": "目标付费智能体数量",
+      "gmv": "预期总交易额 (GMV)",
+      "arpa": "目标每用户平均收入 (ARPA)",
+      "mcpInstalls": "预期安装量",
+      "ttfc": "目标设置时间",
+      "uptime": "SLA 承诺",
+      "values": {
+        "apiCalls": "15,000+",
+        "payingAgents": "500+",
+        "gmv": "$100,000+",
+        "arpa": "$200",
+        "mcpInstalls": "2,500+",
+        "ttfc": "< 5 分",
+        "uptime": "99.9%"
+      }
+    },
+    "roadmap": {
+      "title": "路线图",
+      "phase1": {
+        "title": "全欧扩张",
+        "desc": "将 HITL 网络扩展到奥地利、瑞士和荷兰，实现单一 API 全欧执行。"
+      },
+      "phase2": {
+        "title": "面向智能体的 BaaS",
+        "desc": "通过责任保护伞对实体银行账户进行程序化控制。"
+      },
+      "phase3": {
+        "title": "链上声誉",
+        "desc": "基于执行历史的信用评分，以实现无托管行动。"
+      }
+    },
+    "benchmarks": {
+      "title": "对标基准",
+      "bittensor": {
+        "title": "Bittensor",
+        "desc": "机器智能的共识。AgentBureau 是实体工作的共识。"
+      },
+      "akash": {
+        "title": "Akash Network",
+        "desc": "向智能体计算的转变证明了对临时资源获取的需求。"
+      }
+    },
+    "valuation": {
+      "title": "估值与融资",
+      "ask": "当前轮次：种子轮 / 100万-200万美元目标",
+      "amount": "金额",
+      "cap": "估值上限",
+      "v1": { "amount": "$10万–50万", "cap": "$900万" },
+      "v2": { "amount": "$50万–100万", "cap": "$1100万" },
+      "v3": { "amount": "$100万–200万", "cap": "$1500万" }
+    },
+    "risks": {
+      "title": "风险与缓解措施",
+      "risk": "风险",
+      "mitigation": "缓解措施",
+      "reg": { "label": "监管", "mitigation": "与德国联邦金融监管局 (BaFin) 创新中心保持一致" },
+      "counterparty": { "label": "对手方", "mitigation": "多供应商抽象层" },
+      "rails": { "label": "加密轨道", "mitigation": "法定货币回退路线图" },
+      "abuse": { "label": "智能体滥用", "mitigation": "HITL 关卡与行为分析" }
+    },
+    "cta": {
+      "title": "准备好支持具体化层了吗？",
+      "main": "请求进入资料库",
+      "secondary": "预约介绍会话"
+    }
   },
   "hero": {
     "title": "赋予您的智能体在现实世界中的能力。",

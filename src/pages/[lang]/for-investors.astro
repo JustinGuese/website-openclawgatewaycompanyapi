@@ -1,0 +1,333 @@
+---
+import Landing from '../../layouts/Landing.astro';
+import { locales, useTranslations, defaultLocale } from '../../i18n/t';
+
+export function getStaticPaths() {
+  return locales.filter(l => l !== 'en').map(lang => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+const locale = lang as any;
+const t = useTranslations(locale);
+
+const l = (path: string) => {
+	if (locale === defaultLocale) return path;
+	return `/${locale}${path === '/' ? '' : path}`;
+};
+
+const mailtoLink = "mailto:info@agentbureau.de?subject=Investor%20Inquiry%20%E2%80%94%20Data%20Room%20Request";
+---
+
+<Landing title={`${t('forInvestors.metaTitle')} - ${t('site.title')}`} description={t('forInvestors.metaDescription')}>
+  {/* Hero Section */}
+  <div class="bg-slate-50 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center">
+      <h1 class="text-4xl font-extrabold text-slate-900 sm:text-5xl lg:text-6xl">
+        {t('forInvestors.hero.title')}
+      </h1>
+      <p class="mt-6 text-xl text-slate-600 max-w-3xl mx-auto">
+        {t('forInvestors.hero.subtitle')}
+      </p>
+      <div class="mt-10 flex justify-center gap-4">
+        <a href={mailtoLink} class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-slate-900 hover:bg-slate-800">
+          {t('forInvestors.hero.ctaDataRoom')}
+        </a>
+        <a href="#thesis" class="inline-flex items-center px-6 py-3 border border-slate-300 text-base font-medium rounded-md text-slate-700 bg-white hover:bg-slate-50">
+          {t('forInvestors.hero.ctaThesis')}
+        </a>
+      </div>
+    </div>
+  </div>
+
+  {/* Stats Strip */}
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+      {['tam', 'margin', 'services', 'locales'].map((key) => (
+        <div class="bg-white overflow-hidden shadow rounded-lg border border-slate-100 p-5">
+          <dt class="text-sm font-medium text-slate-500 truncate">{t(`forInvestors.stats.${key}.label`)}</dt>
+          <dd class="mt-1 text-3xl font-semibold text-slate-900">{t(`forInvestors.stats.${key}.value`)}</dd>
+          <dd class="mt-1 text-sm text-slate-400">{t(`forInvestors.stats.${key}.sub`)}</dd>
+        </div>
+      ))}
+    </div>
+  </div>
+
+  {/* Problem Section: The Embodiment Gap */}
+  <div class="bg-white py-24" id="thesis">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-extrabold text-slate-900 sm:text-4xl">{t('forInvestors.problem.title')}</h2>
+        <p class="mt-4 text-xl text-slate-600 max-w-3xl mx-auto">{t('forInvestors.problem.subtitle')}</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {['identity', 'finance', 'action'].map((key) => (
+          <div class="bg-slate-50 rounded-2xl p-8 border border-slate-100">
+            <h3 class="text-xl font-bold text-slate-900 mb-6 flex items-center">
+              <span class="bg-slate-900 text-white w-8 h-8 rounded-full flex items-center justify-center mr-3 text-sm">
+                {key === 'identity' ? '01' : key === 'finance' ? '02' : '03'}
+              </span>
+              {t(`forInvestors.problem.${key}.title`)}
+            </h3>
+            <div class="space-y-4">
+              <div>
+                <p class="text-xs font-bold text-slate-400 uppercase tracking-wider">{t('forInvestors.whyNow.legacy')}</p>
+                <p class="text-slate-600">{t(`forInvestors.problem.${key}.legacy`)}</p>
+              </div>
+              <div>
+                <p class="text-xs font-bold text-slate-400 uppercase tracking-wider">{t('forInvestors.whyNow.agentConstraint')}</p>
+                <p class="text-slate-600">{t(`forInvestors.problem.${key}.agent`)}</p>
+              </div>
+              <div class="pt-4 border-t border-slate-200">
+                <p class="text-xs font-bold text-blue-600 uppercase tracking-wider">{t('site.title')} {t('forInvestors.whyNow.solution')}</p>
+                <p class="text-slate-900 font-medium">{t(`forInvestors.problem.${key}.solution`)}</p>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+
+  {/* Why Now: Comparison Table */}
+  <div class="bg-slate-50 py-24 border-y border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-extrabold text-slate-900 sm:text-4xl">{t('forInvestors.whyNow.title')}</h2>
+        <p class="mt-4 text-xl text-slate-600 max-w-3xl mx-auto">{t('forInvestors.whyNow.subtitle')}</p>
+      </div>
+
+      <div class="overflow-hidden shadow ring-1 ring-black ring-opacity-5 md:rounded-lg">
+        <table class="min-w-full divide-y divide-slate-300">
+          <thead class="bg-slate-100">
+            <tr>
+              <th scope="col" class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-slate-900 sm:pl-6">{t('forInvestors.whyNow.feature')}</th>
+              <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-slate-900">{t('forInvestors.whyNow.legacy')}</th>
+              <th scope="col" class="px-3 py-3.5 text-left text-sm font-bold text-slate-900 bg-slate-200/50">{t('forInvestors.whyNow.mcp')}</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-200 bg-white">
+            {['onboarding', 'auth', 'payment', 'discovery'].map((key) => (
+              <tr>
+                <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-slate-900 sm:pl-6">{t(`forInvestors.whyNow.${key}.label`)}</td>
+                <td class="whitespace-nowrap px-3 py-4 text-sm text-slate-500">{t(`forInvestors.whyNow.${key}.legacy`)}</td>
+                <td class="whitespace-nowrap px-3 py-4 text-sm text-slate-900 font-medium bg-slate-50/50">{t(`forInvestors.whyNow.${key}.mcp`)}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  {/* Revenue Mix */}
+  <div class="bg-white py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-extrabold text-slate-900 sm:text-4xl">{t('forInvestors.revenue.title')}</h2>
+      </div>
+
+      <div class="overflow-hidden shadow ring-1 ring-black ring-opacity-5 md:rounded-lg">
+        <table class="min-w-full divide-y divide-slate-300">
+          <thead class="bg-slate-50">
+            <tr>
+              <th scope="col" class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-slate-900 sm:pl-6">{t('forInvestors.revenue.service')}</th>
+              <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-slate-900">{t('forInvestors.revenue.price')}</th>
+              <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-slate-900">{t('forInvestors.revenue.cost')}</th>
+              <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-slate-900">{t('forInvestors.revenue.margin')}</th>
+              <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-slate-900">{t('forInvestors.whyNow.feature')} {t('forInvestors.whyNow.driver')}</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-200 bg-white">
+            {[
+              { key: 'fax', price: '$1.00', cost: '$0.05', margin: '95%' },
+              { key: 'letter', price: '$3.00', cost: '$0.85', margin: '71%' },
+              { key: 'invoice', price: '$5.00', cost: '$0.10', margin: '98%' },
+              { key: 'ug', price: '$1,500.00', cost: '$900.00', margin: '40%' },
+              { key: 'gmbh', price: '$3,000.00', cost: '$1,800.00', margin: '40%' }
+            ].map((item) => (
+              <tr>
+                <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-slate-900 sm:pl-6">{t(`pricing.table.services.${item.key}`)}</td>
+                <td class="whitespace-nowrap px-3 py-4 text-sm text-slate-500">{item.price}</td>
+                <td class="whitespace-nowrap px-3 py-4 text-sm text-slate-500">{item.cost}</td>
+                <td class="whitespace-nowrap px-3 py-4 text-sm text-green-600 font-bold">{item.margin}</td>
+                <td class="whitespace-nowrap px-3 py-4 text-sm text-slate-500">{t(`forInvestors.revenue.drivers.${item.key}`)}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  {/* Regulatory Moat */}
+  <div class="bg-slate-900 py-24 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-extrabold sm:text-4xl">{t('forInvestors.moat.title')}</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {['zag', 'storer', 'hitl'].map((key) => (
+          <div class="bg-slate-800 rounded-2xl p-8 border border-slate-700">
+            <h3 class="text-xl font-bold mb-4">{t(`forInvestors.moat.${key}.title`)}</h3>
+            <p class="text-slate-400">{t(`forInvestors.moat.${key}.desc`)}</p>
+            <div class="mt-6">
+              <a href={key === 'hitl' ? "/docs/legal/hitl-and-sla" : `/docs/legal/${key === 'zag' ? 'zag-exemption' : 'storerhaftung'}`} class="text-sm font-medium text-blue-400 hover:text-blue-300 flex items-center">
+                {t('services.learnMore')}
+                <svg class="ml-1 w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+
+  {/* KPIs / Traction */}
+  <div class="bg-white py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-extrabold text-slate-900 sm:text-4xl">{t('forInvestors.kpis.title')}</h2>
+        <p class="mt-4 text-slate-500">{t('forInvestors.kpis.subtitle')}</p>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        {['apiCalls', 'payingAgents', 'gmv', 'arpa', 'mcpInstalls', 'ttfc', 'uptime'].map((key) => (
+          <div class="bg-slate-50 p-6 rounded-xl border border-slate-100">
+            <p class="text-sm font-medium text-slate-500 mb-1">{t(`forInvestors.kpis.${key}`)}</p>
+            <p class="text-2xl font-bold text-slate-900">{t(`forInvestors.kpis.values.${key}`)}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+
+  {/* Roadmap */}
+  <div class="bg-slate-50 py-24 border-y border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-extrabold text-slate-900 sm:text-4xl">{t('forInvestors.roadmap.title')}</h2>
+      </div>
+
+      <div class="max-w-3xl mx-auto space-y-8">
+        {['phase1', 'phase2', 'phase3'].map((key, index) => (
+          <div class="flex">
+            <div class="flex-shrink-0 flex flex-col items-center mr-6">
+              <div class="w-10 h-10 rounded-full bg-slate-900 text-white flex items-center justify-center font-bold">
+                {index + 1}
+              </div>
+              {index < 2 && <div class="w-px h-full bg-slate-300 mt-2"></div>}
+            </div>
+            <div class="pb-8">
+              <h3 class="text-xl font-bold text-slate-900 mb-2">{t(`forInvestors.roadmap.${key}.title`)}</h3>
+              <p class="text-slate-600">{t(`forInvestors.roadmap.${key}.desc`)}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+
+  {/* Benchmarks */}
+  <div class="bg-white py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-extrabold text-slate-900 sm:text-4xl">{t('forInvestors.benchmarks.title')}</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {['bittensor', 'akash'].map((key) => (
+          <div class="bg-slate-50 rounded-2xl p-8 border border-slate-100 flex items-start">
+            <div class={`w-12 h-12 rounded-lg ${key === 'bittensor' ? 'bg-black' : 'bg-red-600'} flex-shrink-0 mr-6`}></div>
+            <div>
+              <h3 class="text-xl font-bold text-slate-900 mb-2">{t(`forInvestors.benchmarks.${key}.title`)}</h3>
+              <p class="text-slate-600">{t(`forInvestors.benchmarks.${key}.desc`)}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+
+  {/* Valuation & Round */}
+  <div class="bg-slate-50 py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden border border-slate-200">
+        <div class="bg-slate-900 px-8 py-6 text-white">
+          <h2 class="text-2xl font-bold">{t('forInvestors.valuation.title')}</h2>
+          <p class="text-slate-400 mt-1">{t('forInvestors.valuation.ask')}</p>
+        </div>
+        <div class="px-8 py-8">
+          <table class="min-w-full">
+            <thead>
+              <tr class="border-b border-slate-100">
+                <th class="py-4 text-left text-sm font-semibold text-slate-500 uppercase tracking-wider">{t('forInvestors.valuation.amount')}</th>
+                <th class="py-4 text-left text-sm font-semibold text-slate-500 uppercase tracking-wider">{t('forInvestors.valuation.cap')}</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-100">
+              {['v1', 'v2', 'v3'].map((key) => (
+                <tr>
+                  <td class="py-4 text-slate-900 font-medium">{t(`forInvestors.valuation.${key}.amount`)}</td>
+                  <td class="py-4 text-slate-600">{t(`forInvestors.valuation.${key}.cap`)}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {/* Risks */}
+  <div class="bg-white py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-extrabold text-slate-900 sm:text-4xl">{t('forInvestors.risks.title')}</h2>
+      </div>
+
+      <div class="max-w-4xl mx-auto overflow-hidden shadow ring-1 ring-black ring-opacity-5 md:rounded-lg">
+        <table class="min-w-full divide-y divide-slate-300">
+          <thead class="bg-slate-50">
+            <tr>
+              <th scope="col" class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-slate-900 sm:pl-6">{t('forInvestors.risks.risk')}</th>
+              <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-slate-900">{t('forInvestors.risks.mitigation')}</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-200 bg-white">
+            {['reg', 'counterparty', 'rails', 'abuse'].map((key) => (
+              <tr>
+                <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-bold text-slate-900 sm:pl-6">{t(`forInvestors.risks.${key}.label`)}</td>
+                <td class="px-3 py-4 text-sm text-slate-600">{t(`forInvestors.risks.${key}.mitigation`)}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  {/* Closing CTA */}
+  <div class="bg-slate-900 py-24">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+      <h2 class="text-3xl font-extrabold sm:text-4xl mb-8">
+        {t('forInvestors.cta.title')}
+      </h2>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href={mailtoLink} class="inline-flex items-center justify-center px-8 py-4 border border-transparent text-lg font-bold rounded-md shadow-sm text-slate-900 bg-white hover:bg-slate-100">
+          {t('forInvestors.cta.main')}
+        </a>
+        <a href="https://cal.com/datafortress-justin/30min" class="inline-flex items-center justify-center px-8 py-4 border-2 border-slate-700 text-lg font-bold rounded-md text-white hover:bg-slate-800 transition-colors">
+          {t('forInvestors.cta.secondary')}
+        </a>
+      </div>
+      <p class="mt-8 text-slate-500 text-sm">
+        Metrics updated quarterly — last update April 2026. <br/>
+        AgentBureau is a product of DataFortress.cloud GmbH.
+      </p>
+    </div>
+  </div>
+</Landing>

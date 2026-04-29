@@ -15,7 +15,8 @@
     "agb": "AGB / Legal",
     "privacy": "Datenschutz",
     "contact": "Contact",
-    "getStarted": "Get Started"
+    "getStarted": "Get Started",
+    "forInvestors": "For Investors"
   },
   "footer": {
     "services": "Services",
@@ -29,6 +30,172 @@
     "datenschutz": "Datenschutz",
     "agb": "AGB",
     "rights": "All rights reserved."
+  },
+  "forInvestors": {
+    "metaTitle": "Investor Relations",
+    "metaDescription": "The Embodiment Protocol for the Agentic Economy. Infrastructure for AI agents in the DACH region.",
+    "hero": {
+      "title": "The Embodiment Protocol for the Agentic Economy",
+      "subtitle": "Bridging the gap between AI agency and institutional execution in the DACH region.",
+      "ctaDataRoom": "Request Data Room",
+      "ctaThesis": "Read the Thesis"
+    },
+    "stats": {
+      "tam": {
+        "value": "$182.97B",
+        "label": "Agent Economy TAM 2033",
+        "sub": "49.6% CAGR"
+      },
+      "margin": {
+        "value": "~30%",
+        "label": "Margin Advantage",
+        "sub": "vs. Traditional PSPs"
+      },
+      "services": {
+        "value": "5",
+        "label": "Services Live",
+        "sub": "Fax, Letter, Invoice, GmbH, UG"
+      },
+      "locales": {
+        "value": "5 / 6",
+        "label": "Locales / Languages",
+        "sub": "DE, EN, FR, ES, ZH"
+      }
+    },
+    "problem": {
+      "title": "The Embodiment Gap",
+      "subtitle": "AI agents have high cognitive agency but zero institutional agency. We provide the missing layer.",
+      "identity": {
+        "title": "Identity",
+        "legacy": "Government ID / KYC",
+        "agent": "Non-biological; No legal ID",
+        "solution": "x402 Payment-native Auth"
+      },
+      "finance": {
+        "title": "Finance",
+        "legacy": "SEPA Bank Account",
+        "agent": "No 'human' signatory",
+        "solution": "USDC on Base Settlement"
+      },
+      "action": {
+        "title": "Action",
+        "legacy": "Physical Signature / Fax",
+        "agent": "No physical presence",
+        "solution": "Programmatic Fax/Letter API"
+      }
+    },
+    "whyNow": {
+      "title": "Why Now?",
+      "subtitle": "The x402 + MCP inflection point enables stateless machine-to-machine commerce.",
+      "feature": "Feature",
+      "legacy": "Legacy API Model",
+      "mcp": "MCP + x402 Model",
+      "agentConstraint": "Agent Constraint",
+      "solution": "Solution",
+      "driver": "Driver",
+      "onboarding": { "label": "Onboarding", "legacy": "Manual account + KYC", "mcp": "Instant, stateless" },
+      "auth": { "label": "Auth", "legacy": "Static API Keys", "mcp": "Cryptographic signatures" },
+      "payment": { "label": "Payment", "legacy": "Subscription / Card", "mcp": "Per-request USDC" },
+      "discovery": { "label": "Discovery", "legacy": "Manual docs", "mcp": "Programmatic (MCP)" }
+    },
+    "revenue": {
+      "title": "Product / Revenue Mix",
+      "service": "Service",
+      "price": "Price (USDC)",
+      "cost": "Cost Basis",
+      "margin": "Margin",
+      "drivers": {
+        "fax": "High-volume automation",
+        "letter": "Logistic abstraction",
+        "invoice": "Accounting API wrap",
+        "ug": "Regulatory arbitrage",
+        "gmbh": "Trust premium"
+      }
+    },
+    "moat": {
+      "title": "Regulatory Moat",
+      "zag": {
+        "title": "ZAG §2(1) No.10 a/b",
+        "desc": "Leveraging limited network exemptions to move volume without full banking overhead."
+      },
+      "storer": {
+        "title": "Störerhaftung 2026",
+        "desc": "Strategic alignment with modernized product liability acts for autonomous software."
+      },
+      "hitl": {
+        "title": "HITL Concierge",
+        "desc": "Human-in-the-loop duty-of-care layer for high-risk legal executions."
+      }
+    },
+    "kpis": {
+      "title": "Projected Growth & Targets",
+      "subtitle": "Year 1 performance targets based on current pipeline",
+      "apiCalls": "Target Monthly Calls",
+      "payingAgents": "Target Paying Agents",
+      "gmv": "Projected GMV",
+      "arpa": "Target ARPA",
+      "mcpInstalls": "Projected Installs",
+      "ttfc": "Target Setup Time",
+      "uptime": "SLA Commitment",
+      "values": {
+        "apiCalls": "15,000+",
+        "payingAgents": "500+",
+        "gmv": "$100,000+",
+        "arpa": "$200",
+        "mcpInstalls": "2,500+",
+        "ttfc": "< 5 min",
+        "uptime": "99.9%"
+      }
+    },
+    "roadmap": {
+      "title": "Roadmap",
+      "phase1": {
+        "title": "Pan-EU Expansion",
+        "desc": "Expanding HITL network to AT, CH, and NL for single-API European execution."
+      },
+      "phase2": {
+        "title": "BaaS for Agents",
+        "desc": "Programmatic control over entity bank accounts via liability umbrellas."
+      },
+      "phase3": {
+        "title": "On-Chain Reputation",
+        "desc": "Credit scoring based on execution history to enable escrow-less actions."
+      }
+    },
+    "benchmarks": {
+      "title": "Comparable Benchmarks",
+      "bittensor": {
+        "title": "Bittensor",
+        "desc": "Consensus on machine intelligence. AgentBureau is consensus on physical work."
+      },
+      "akash": {
+        "title": "Akash Network",
+        "desc": "The shift to agentic compute proves the demand for ephemeral resource acquisition."
+      }
+    },
+    "valuation": {
+      "title": "Valuation & Round",
+      "ask": "Current Round: Seed / $1M–2M Target",
+      "amount": "Amount",
+      "cap": "Valuation Cap",
+      "v1": { "amount": "$100k–500k", "cap": "$9M" },
+      "v2": { "amount": "$500k–1M", "cap": "$11M" },
+      "v3": { "amount": "$1M–2M", "cap": "$15M" }
+    },
+    "risks": {
+      "title": "Risks & Mitigations",
+      "risk": "Risk",
+      "mitigation": "Mitigation",
+      "reg": { "label": "Regulatory", "mitigation": "BaFin Innovation Hub alignment" },
+      "counterparty": { "label": "Counterparty", "mitigation": "Multi-vendor abstraction layer" },
+      "rails": { "label": "Crypto Rails", "mitigation": "Fiat-fallback roadmap" },
+      "abuse": { "label": "Agent Abuse", "mitigation": "HITL gates & behavioral analysis" }
+    },
+    "cta": {
+      "title": "Ready to back the Embodiment Layer?",
+      "main": "Request Data Room",
+      "secondary": "Book Intro Call"
+    }
   },
   "hero": {
     "title": "Empower Your Agents in the Real World.",

@@ -15,20 +15,187 @@
     "agb": "Términos / Legal",
     "privacy": "Privacidad",
     "contact": "Contacto",
-    "getStarted": "Comenzar"
+    "getStarted": "Comenzar",
+    "forInvestors": "Para inversores"
   },
   "footer": {
     "services": "Servicios",
     "developer": "Desarrollador",
     "legal": "Legal",
-    "documentation": "Documentación",
+    "documentation": "Documentation",
     "codeExamples": "Ejemplos de código",
-    "runnableScripts": "Scripts ejecutables (GitHub)",
+    "runnableScripts": "Scripts exécutables (GitHub)",
     "github": "GitHub",
     "impressum": "Aviso legal",
     "datenschutz": "Privacidad",
     "agb": "Términos",
     "rights": "Todos los derechos reservados."
+  },
+  "forInvestors": {
+    "metaTitle": "Relaciones con inversores",
+    "metaDescription": "El Protocolo de Encarnación para la Economía Agéntica. Infraestructura para agentes de IA en la región DACH.",
+    "hero": {
+      "title": "El Protocolo de Encarnación para la Economía Agéntica",
+      "subtitle": "Cerrando la brecha entre la agencia cognitiva de la IA y la ejecución institucional en la región DACH.",
+      "ctaDataRoom": "Solicitar acceso al Data Room",
+      "ctaThesis": "Leer la tesis"
+    },
+    "stats": {
+      "tam": {
+        "value": "$182.97B",
+        "label": "TAM de la Economía de Agentes 2033",
+        "sub": "49.6% CAGR"
+      },
+      "margin": {
+        "value": "~30%",
+        "label": "Ventaja de margen",
+        "sub": "vs PSP tradicionales"
+      },
+      "services": {
+        "value": "5",
+        "label": "Servicios activos",
+        "sub": "Fax, Carta, Factura, GmbH, UG"
+      },
+      "locales": {
+        "value": "5 / 6",
+        "label": "Localizaciones / Idiomas",
+        "sub": "DE, EN, FR, ES, ZH"
+      }
+    },
+    "problem": {
+      "title": "La brecha de encarnación",
+      "subtitle": "Los agentes de IA tienen una alta agencia cognitiva pero cero agencia institucional. Proporcionamos la capa que falta.",
+      "identity": {
+        "title": "Identidad",
+        "legacy": "ID gubernamental / KYC",
+        "agent": "No biológico; Sin ID legal",
+        "solution": "Autenticación nativa de pagos x402"
+      },
+      "finance": {
+        "title": "Finanzas",
+        "legacy": "Cuenta bancaria SEPA",
+        "agent": "Sin firmante humano",
+        "solution": "Liquidación en USDC en Base"
+      },
+      "action": {
+        "title": "Acción",
+        "legacy": "Firma física / Fax",
+        "agent": "Sin presencia física",
+        "solution": "API de fax/carta programática"
+      }
+    },
+    "whyNow": {
+      "title": "¿Por qué ahora?",
+      "subtitle": "El punto de inflexión x402 + MCP permite el comercio de máquina a máquina sin estado.",
+      "feature": "Característica",
+      "legacy": "Modelo de API heredado",
+      "mcp": "Modelo MCP + x402",
+      "agentConstraint": "Restricción del Agente",
+      "solution": "Solución",
+      "driver": "Impulsor",
+      "onboarding": { "label": "Onboarding", "legacy": "Cuenta manual + KYC", "mcp": "Instantáneo, sin estado" },
+      "auth": { "label": "Autenticación", "legacy": "Claves API estáticas", "mcp": "Firmas criptográficas" },
+      "payment": { "label": "Pago", "legacy": "Suscripción / Tarjeta", "mcp": "USDC por solicitud" },
+      "discovery": { "label": "Descubrimiento", "legacy": "Documentación manual", "mcp": "Programático (MCP)" }
+    },
+    "revenue": {
+      "title": "Mix de Producto / Ingresos",
+      "service": "Servicio",
+      "price": "Precio (USDC)",
+      "cost": "Base de costes",
+      "margin": "Margen",
+      "drivers": {
+        "fax": "Automatización de alto volumen",
+        "letter": "Abstracción logística",
+        "invoice": "Wrapper de API de contabilidad",
+        "ug": "Arbitraje regulatorio",
+        "gmbh": "Prima de confianza"
+      }
+    },
+    "moat": {
+      "title": "Barrera regulatoria",
+      "zag": {
+        "title": "ZAG §2(1) No.10 a/b",
+        "desc": "Aprovechamiento de las exenciones de redes limitadas para mover volumen sin los costes bancarios completos."
+      },
+      "storer": {
+        "title": "Störerhaftung 2026",
+        "desc": "Alineación estratégica con las leyes modernizadas de responsabilidad por productos para software autónomo."
+      },
+      "hitl": {
+        "title": "Concierge HITL",
+        "desc": "Capa de deber de diligencia Human-in-the-loop para ejecuciones legales de alto riesgo."
+      }
+    },
+    "kpis": {
+      "title": "Crecimiento proyectado y objetivos",
+      "subtitle": "Objetivos de rendimiento para el año 1 basados en el pipeline actual",
+      "apiCalls": "Objetivo de llamadas mensuales",
+      "payingAgents": "Objetivo de agentes de pago",
+      "gmv": "GMV proyectado",
+      "arpa": "Objetivo ARPA",
+      "mcpInstalls": "Instalaciones proyectadas",
+      "ttfc": "Objetivo de tiempo de configuración",
+      "uptime": "Compromiso de SLA",
+      "values": {
+        "apiCalls": "15,000+",
+        "payingAgents": "500+",
+        "gmv": "$100,000+",
+        "arpa": "$200",
+        "mcpInstalls": "2,500+",
+        "ttfc": "< 5 min",
+        "uptime": "99.9%"
+      }
+    },
+    "roadmap": {
+      "title": "Hoja de ruta",
+      "phase1": {
+        "title": "Expansión Pan-EU",
+        "desc": "Ampliación de la red HITL a AT, CH y NL para la ejecución europea mediante una única API."
+      },
+      "phase2": {
+        "title": "BaaS para agentes",
+        "desc": "Control programático sobre cuentas bancarias de entidades a través de paraguas de responsabilidad."
+      },
+      "phase3": {
+        "title": "Reputación on-chain",
+        "desc": "Puntuación de crédito basada en el historial de ejecución para permitir acciones sin depósito en garantía."
+      }
+    },
+    "benchmarks": {
+      "title": "Benchmarks comparables",
+      "bittensor": {
+        "title": "Bittensor",
+        "desc": "Consenso sobre inteligencia artificial. AgentBureau es el consenso sobre el trabajo físico."
+      },
+      "akash": {
+        "title": "Akash Network",
+        "desc": "El cambio hacia el cómputo agéntico demuestra la demanda de adquisición de recursos efímeros."
+      }
+    },
+    "valuation": {
+      "title": "Valoración y ronda",
+      "ask": "Ronda actual: Semilla / Objetivo $1M–2M",
+      "amount": "Monto",
+      "cap": "Cap de valoración",
+      "v1": { "amount": "$100k–500k", "cap": "$9M" },
+      "v2": { "amount": "$500k–1M", "cap": "$11M" },
+      "v3": { "amount": "$1M–2M", "cap": "$15M" }
+    },
+    "risks": {
+      "title": "Riesgos y mitigaciones",
+      "risk": "Riesgo",
+      "mitigation": "Mitigación",
+      "reg": { "label": "Regulatorio", "mitigation": "Alineación con el BaFin Innovation Hub" },
+      "counterparty": { "label": "Contraparte", "mitigation": "Capa de abstracción multi-proveedor" },
+      "rails": { "label": "Rieles Crypto", "mitigation": "Hoja de ruta con respaldo en fiat" },
+      "abuse": { "label": "Abuso de agentes", "mitigation": "Puertas HITL y análisis de comportamiento" }
+    },
+    "cta": {
+      "title": "¿Listo para apoyar la Capa de Encarnación?",
+      "main": "Solicitar acceso al Data Room",
+      "secondary": "Reservar llamada de introducción"
+    }
   },
   "hero": {
     "title": "Potencie a sus agentes en el mundo real.",
