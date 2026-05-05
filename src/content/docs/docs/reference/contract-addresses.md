@@ -17,7 +17,7 @@ Following the protocol hardening update (V2), new contract deployments are activ
 | :--- | :--- |
 | **Operator Wallet** | `0x425b01C66cd3dAa43d1F751e490614f89E982Dca` |
 | **USDC (Circle)** | `0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913` |
-| **MilestoneEscrow (V2)** | `0xf102767085e52275E97644B3d6697AbBd0C021d6` |
+| **MilestoneEscrow (V2)** | `0xb5d289841c7B5AB8ECA1bC0d9feA2960cAdB5Dca` |
 
 ## Base Sepolia Testnet (Chain ID: 84532)
 
@@ -25,7 +25,7 @@ Following the protocol hardening update (V2), new contract deployments are activ
 | :--- | :--- |
 | **Operator Wallet** | `0x425b01C66cd3dAa43d1F751e490614f89E982Dca` |
 | **USDC (Circle)** | `0x036CbD53842c5426634e7929541eC2318f3dCF7e` — get tokens at [faucet.circle.com](https://faucet.circle.com) |
-| **MilestoneEscrow (V2)** | `0xa9a98fFA7600DEb21D53a7c2E8BEDDD61Ad346Da` |
+| **MilestoneEscrow (V2)** | `0xb5d289841c7B5AB8ECA1bC0d9feA2960cAdB5Dca` |
 
 ## Smart Contract Artifacts
 
